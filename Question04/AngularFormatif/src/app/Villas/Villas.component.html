@@ -1,0 +1,31 @@
+<H1>Les villas</H1>
+
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>Nom</th>
+    <th>Details</th>
+    <th>Rate</th>
+    <th>Square Footing</th>
+    <th>amenity</th>
+    <th>CreatedDate</th>
+    <th>imageUrl</th>
+    <th>Occupancy</th>
+    <th>updatedDate</th>
+  </tr>
+
+  <tr *ngFor="let item of Villas">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.details}}</td>
+    <td>{{item.rate}}</td>
+    <td>{{item.sqFt}}</td>
+    <td>{{item.occupancy}}</td>
+    <td>{{item.imageUrl}}</td>
+    <td>{{item.amenity}}</td>
+    <td>{{item.createDate}}</td>
+    <td>{{item.updatedDate}}</td>
+  </tr>
+
+</table>
